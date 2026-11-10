@@ -1,0 +1,9 @@
+{ "name": "QuoteRequest", "type": "object",
+  "properties": {
+    "customer_name": { "type": "string" }, "email": { "type": "string" }, "phone": { "type": "string" },
+    "address": { "type": "string" },
+    "property_type": { "type": "string", "enum": ["apartment", "house", "office"] },
+    "size_sqft": { "type": "number" },
+    "frequency": { "type": "string", "enum": ["once", "weekly", "biweekly", "monthly"] },
+    "status": { "type": "string", "enum": ["new", "quoted"], "default": "new" }
+  }, "required": ["customer_name", "email", "address"] }

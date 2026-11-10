@@ -1,0 +1,6 @@
+{ "name": "Quote", "type": "object",
+  "properties": {
+    "request_id": { "type": "string" }, "price": { "type": "number" }, "notes": { "type": "string" },
+    "status": { "type": "string", "enum": ["sent", "accepted", "declined"], "default": "sent" },
+    "accepted_at": { "type": "string", "format": "date-time" }
+  }, "required": ["request_id", "price"] }

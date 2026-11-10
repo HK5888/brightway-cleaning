@@ -1,0 +1,7 @@
+{ "name": "Job", "type": "object",
+  "properties": {
+    "quote_id": { "type": "string" }, "address": { "type": "string" }, "date": { "type": "string", "format": "date" },
+    "cleaner_email": { "type": "string" },
+    "status": { "type": "string", "enum": ["scheduled", "complete"], "default": "scheduled" },
+    "completion_note": { "type": "string" }, "price": { "type": "number" }
+  } }

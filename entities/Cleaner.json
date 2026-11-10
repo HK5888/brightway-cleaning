@@ -1,1 +1,2 @@
-{}
+{ "name": "Cleaner", "type": "object",
+  "properties": { "full_name": { "type": "string" }, "email": { "type": "string" }, "phone": { "type": "string" }, "active": { "type": "boolean", "default": true } } }
